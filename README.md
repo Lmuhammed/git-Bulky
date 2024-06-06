@@ -1,16 +1,9 @@
 # Git Bulk Cloning
-
-<img src="https://github.com/X00Byte/Git-Bulk-Cloning/blob/main/repo_background.png" alt="Logo">
+<img src="repo_background.png" alt="Logo">
 <div align="center">
-<h2>
-<p>
 تنزيل اكثر من مستودع جيتهوب 
 Easily clone a group of git repositories
-
-</p>
-</h2>
 </div>
-
 
 ## الدليل باللغة العربية
 - لماذا ؟
@@ -19,11 +12,11 @@ Easily clone a group of git repositories
 *. إفتح الطرفية لتنزيل المستودع :
 
 ```bash
-git clone https://github.com/X00Byte/Git-Bulk-Cloning.git
+git clone https://github.com/L-mohamed/GitMultiClone.git
 ```
 *. إنتقل إلى ملف المستودع :
 ```bash
-cd Git-Bulk-Cloning
+cd GitMultiClone
 ```
 *. الصلاحيات :
 ```bash
@@ -35,19 +28,17 @@ nano repos.txt
 ```
 *. شغل البريمج :
 ```bash
-./gitB.sh
+python3 gitB.py
 ```
-*. ضع روابط المستودات للتحميل :
-
 
 قدراتك البرمجية الخارقة مطلوبة :
   
 <div align="center">
     هذا البريمج لايزال في طفولته المبكرة ، لذا إذ إكتشفت خطأ ما:
-   <a href="https://github.com/X00Byte/Git-Bulk-Cloning/issues">أبلغ عن خطأ</a>
+   <a href="https://github.com/L-mohamed/GitMultiClone/issues">أبلغ عن خطأ</a>
                                                                                            
 
    أو لديك إقتراح لتطويره أو إضافة ميزة جديدة :
-  <a href="https://github.com/X00Byte/Git-Bulk-Cloning/issues">أطلب ميزة جديدة</a>
+  <a href="https://github.com/L-mohamed/GitMultiClone/pulls">أضف ميزة جديدة أو قم بإصلاح خطأ</a>
 
 </div>
