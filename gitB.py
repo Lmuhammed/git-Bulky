@@ -17,19 +17,23 @@ def check_url(url):
     else:
         return False
 
-# Read URL from file
-with open(filename, 'r') as file:
-    lines = file.readlines()
+if os.path.exists(filename):
+        # Read URL from file
+    with open(filename, 'r') as file:
+        lines = file.readlines()
 
-for line in lines:
-    # Test the URL
-    if check_url(line):
-        os.system(f"git clone {line}")
-        time.sleep(1)
-    else:
-        print(f"{line} is not a git repo , fix url and retry ...")
-        exit(1)
+    for line in lines:
+            # Test the URL
+        if check_url(line):
+            os.system(f"git clone {line}")
+            time.sleep(1)
+        else:
+            print(f"{line} is not a git repo , fix url and retry ...")
+            exit(1)
 
-print("تم نسخ جميع المستودعات ، أظهر للعالم إبداعاتك")
-print("All repos SUCCESSFULLY cloned, Make something Geat !")
+    print("تم نسخ جميع المستودعات ، أظهر للعالم إبداعاتك")
+    print("All repos SUCCESSFULLY cloned, Make something Geat !")
+
+else:
+    print(f"{filename} not exist ... ")
 
