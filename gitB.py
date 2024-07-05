@@ -1,6 +1,11 @@
-import os
-import time
-import re
+try:
+    import os       #To run git clone
+    import time     #To sleep :D
+    import re       #To check regx pattern
+except ImportError:
+    print("Error: This script requires : 'os' , 'time' or 're' modules")
+    print("Please install the dependencies then run the script.")
+    raise SystemExit(1)
 
 filename = "repos.txt"
 
