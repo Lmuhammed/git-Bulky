@@ -17,23 +17,31 @@ def check_url(url):
     else:
         return False
 
+def is_file_empty(file_path):
+    return os.path.getsize(file_path) == 0
+
+#check if file exist
 if os.path.exists(filename):
+    #check if file not empty
+    if not is_file_empty(filename):
         # Read URL from file
-    with open(filename, 'r') as file:
-        lines = file.readlines()
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+        for line in lines:
+        # Test the URL
+            if check_url(line):
+                os.system(f"git clone {line}")
+                time.sleep(1)
+            else:
+                print(f"{line} is not a git repo , fix url and retry ...")
+                exit(1)
+        print("تم نسخ جميع المستودعات ، أظهر للعالم إبداعاتك")
+        print("All repos SUCCESSFULLY cloned, make something Great !")
+    #if file empty
+    else:
+        print(f"The file '{filename}' is empty.")
 
-    for line in lines:
-            # Test the URL
-        if check_url(line):
-            os.system(f"git clone {line}")
-            time.sleep(1)
-        else:
-            print(f"{line} is not a git repo , fix url and retry ...")
-            exit(1)
-
-    print("تم نسخ جميع المستودعات ، أظهر للعالم إبداعاتك")
-    print("All repos SUCCESSFULLY cloned, Make something Geat !")
-
+#if file not exist
 else:
-    print(f"{filename} not exist ... ")
+    print(f"The file {filename} not exist ... ")
 
