@@ -1,44 +1,87 @@
-# Git Bulk Cloning
-<img src="repo_background.png" alt="Logo">
-<div align="center">
-تنزيل اكثر من مستودع جيتهوب 
-Easily clone a group of git repositories
+<div style="text-align: center;">
+
+# git-Bulky 
 </div>
 
-## الدليل باللغة العربية
-- لماذا ؟
+<div style="text-align: right;">
+
+## الدليل بالعربية 
+
 إذا كنت تريد تنزيل أكثر من مستودع جيتهوب ،يكنك التزيل بالطريقة التقليدية لكنها طريقة غير عملية و مستنفذة للوقت .لكن نحن هنا :D ، يمكنك إستعمال هذا البرنامج 
-- طريقة التشغيل
-*. إفتح الطرفية لتنزيل المستودع :
+
+### جدول المحتويات
+
+- [التثبيت](#التثبيت)
+- [الاستخدام](#الاستخدام)
+- [المساهمة](#المساهمة)
+- [الترخيص](#الترخيص)
+
+
+### التثبيت
+
+- إفتح الطرفية في مكانك المفضل 
 
 ```bash
-git clone https://github.com/L-mohamed/GitMultiClone.git
-```
-*. إنتقل إلى ملف المستودع :
-```bash
-cd GitMultiClone
-```
-*. الصلاحيات :
-```bash
-chmod +x gitB.sh
-```
-*. إفتح ملف الروابط :
-```bash
-nano repos.txt
-```
-*. شغل البريمج :
-```bash
-python3 gitB.py
+git clone https://github.com/Lmuhammed/git-Bulky.git
 ```
 
-قدراتك البرمجية الخارقة مطلوبة :
-  
-<div align="center">
-    هذا البريمج لايزال في طفولته المبكرة ، لذا إذ إكتشفت خطأ ما:
-   <a href="https://github.com/L-mohamed/GitMultiClone/issues">أبلغ عن خطأ</a>
-                                                                                           
+### الاستخدام
+- قُم بالدخول إلى مجلد المُستودع 
 
-   أو لديك إقتراح لتطويره أو إضافة ميزة جديدة :
-  <a href="https://github.com/L-mohamed/GitMultiClone/pulls">أضف ميزة جديدة أو قم بإصلاح خطأ</a>
+```bash
+cd ./git-Bulky
+```
+- ضع روابط المستودعات في ملف repos.txt 
 
-</div>
+```bash
+python3 ./git-Bulky
+``` 
+
+### المساهمة
+
+إذا لاحظت أي مشكلة أو درت المُساهمة في التطوير ، لا تتردد في <a href="https://github.com/Lmuhammed/git-Bulky/issues">الإبلاغ غن خطأ</a>
+أو قم بنسخ المُستودع وأرسل التغييرات للمُراجعة .
+### الترخيص
+
+موزعة بموجب ترخيص GPL3. انظر 'LICENSE.txt' لمزيد من المعلومات.
+
+</div> 
+
+### English manual  
+
+If you want to clone more than one GitHub repository, you can download the standard way, but it's impractical and time-consuming. 
+
+#### Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+#### Installation
+
+- Open the terminal at your favorite place 
+
+```bash
+git clone https://github.com/Lmuhammed/git-Bulky.git
+```
+
+#### Usage
+- Access the project folder 
+
+```bash
+cd ./git-Bulky
+```
+- Include repositories links in a file repos.txt and :
+
+```bash
+python3 ./git-Bulky
+```
+
+#### Contributing
+
+If you notice any issues or want to contribute to the development, feel free to  <a href="https://github.com/Lmuhammed/git-Bulky/issues">report a bug</a> or  fork the repo and commit changes as PULL REQUEST
+
+#### License
+
+Distributed under the GPL3 License. See `LICENSE.txt` for more information.
