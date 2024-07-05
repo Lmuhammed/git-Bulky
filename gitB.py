@@ -6,11 +6,12 @@ filename = "repos.txt"
 
 # use the 're' module to check if a URL complies with a specific regex pattern : https://github.com/{username}/{repo_name}.git
 def check_url(url):
-    pattern = r'https://www\.github.com\.com/\w+/\w+\.git'
+    pattern = r'^https://github.com/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)\.git$'
     if re.match(pattern, url):
         return True
     else:
         return False
+
 # Read URL from file
 with open(filename, 'r') as file:
     lines = file.readlines()
@@ -23,8 +24,7 @@ for line in lines:
     else:
         print(f"{line} is not a git repo , fix url and retry ...")
         exit(1)
-    
 
 print("تم نسخ جميع المستودعات ، أظهر للعالم إبداعاتك")
-print("ALl repos SUCCESSFULLY , Make something Geat !")
+print("All repos SUCCESSFULLY cloned, Make something Geat !")
 
