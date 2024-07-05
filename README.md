@@ -1,6 +1,7 @@
 <div style="text-align: center;">
 
 # git-Bulky 
+![repo background](repo_background.png)
 </div>
 
 <div style="text-align: right;">
